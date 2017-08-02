@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:id="@+id/id_parent_layout"
+tools:context="com.example.venka.icecreamorderapp.MainActivity">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/id_name_edit"
+    android:hint="Enter Customer Name"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Toppings"
+    android:textSize="18sp"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:id="@+id/id_toppings_text"
+    />
+
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/id_chocolate_check"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:text="Chocolate"/>
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/id_dry_fruit_check"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:text="Dry Fruit"/>
+
+<TextView
+    android:id="@+id/id_quantity_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:text="Quantity"
+    android:textSize="18sp" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/id_plus_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="increaseQuantity"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/id_quantity_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/id_minus_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="-" />
+</LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Order Summary"
+    android:textSize="18sp"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:id="@+id/id_price_text"
+    />
+
+<TextView
+    android:id="@+id/id_price_value_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:text=""
+    android:textSize="12sp"
+    />
+
+<Button
+    android:id="@+id/id_order_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:onClick="calculatePrice"
+    android:text="Order" />
+
+</LinearLayout>
